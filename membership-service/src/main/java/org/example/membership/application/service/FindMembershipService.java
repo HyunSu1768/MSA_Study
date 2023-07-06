@@ -1,0 +1,30 @@
+package org.example.membership.application.service;
+
+import lombok.RequiredArgsConstructor;
+import org.example.common.UserCase;
+import org.example.membership.adapter.out.persistence.MembershipJpaEntity;
+import org.example.membership.adapter.out.persistence.MembershipMapper;
+import org.example.membership.application.port.in.FindMembershipCommand;
+import org.example.membership.application.port.in.FindMembershipUseCase;
+import org.example.membership.application.port.out.FindMembershipPort;
+import org.example.membership.domain.Membership;
+import org.springframework.transaction.annotation.Transactional;
+
+@RequiredArgsConstructor
+@UserCase
+@Transactional
+public class FindMembershipService implements FindMembershipUseCase {
+
+    private final FindMembershipPort findMEmbershipPort;
+
+    private final MembershipMapper membershipMapper;
+
+    @Override
+    public Membership findMembership(FindMembershipCommand command) {
+        MembershipJpaEntity entity = findMEmbershipPort.findMembership(new Membership.MembershipId(command.getMembershipId()));
+
+        return membershipMapper.mapToDomainEntity(entity);
+
+    }
+
+}
