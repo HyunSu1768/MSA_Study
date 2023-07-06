@@ -1,12 +1,11 @@
 package org.example.membership.application.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.common.PersistenceAdapter;
 import org.example.common.UserCase;
 import org.example.membership.adapter.out.persistence.MembershipJpaEntity;
 import org.example.membership.adapter.out.persistence.MembershipMapper;
 import org.example.membership.application.port.in.RegisterMembershipCommand;
-import org.example.membership.application.port.in.RegisterMembershipUserCase;
+import org.example.membership.application.port.in.RegisterMembershipUseCase;
 import org.example.membership.application.port.out.RegisterMembershipPort;
 import org.example.membership.domain.Membership;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 @UserCase
 @Transactional
-public class RegisterMembershipService implements RegisterMembershipUserCase {
+public class RegisterMembershipService implements RegisterMembershipUseCase {
 
     private final RegisterMembershipPort registerMembershipPort;
 
