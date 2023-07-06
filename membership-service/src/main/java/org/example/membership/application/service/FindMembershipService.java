@@ -1,7 +1,7 @@
 package org.example.membership.application.service;
 
 import lombok.RequiredArgsConstructor;
-import org.example.common.UserCase;
+import org.example.common.UseCase;
 import org.example.membership.adapter.out.persistence.MembershipJpaEntity;
 import org.example.membership.adapter.out.persistence.MembershipMapper;
 import org.example.membership.application.port.in.FindMembershipCommand;
@@ -11,7 +11,7 @@ import org.example.membership.domain.Membership;
 import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
-@UserCase
+@UseCase
 @Transactional
 public class FindMembershipService implements FindMembershipUseCase {
 
