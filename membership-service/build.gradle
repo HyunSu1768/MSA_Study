@@ -43,6 +43,8 @@ dependencies {
 //    implementation 'org.jetbrains:annotaions:23.0.0'
     testImplementation 'junit:junit:4.13.1'
 
+    implementation project(path: ':common')
+
     implementation 'mysql:mysql-connector-java'
 }
 
