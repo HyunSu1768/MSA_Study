@@ -1,4 +1,4 @@
-package org.example.membership.adapter.in.web;
+package com.example.membership.adapter.in.web;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

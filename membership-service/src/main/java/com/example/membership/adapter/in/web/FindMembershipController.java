@@ -1,10 +1,10 @@
-package org.example.membership.adapter.in.web;
+package com.example.membership.adapter.in.web;
 
+import com.example.membership.application.port.in.FindMembershipUseCase;
+import com.example.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.example.common.WebAdapter;
-import org.example.membership.application.port.in.FindMembershipCommand;
-import org.example.membership.application.port.in.FindMembershipUseCase;
-import org.example.membership.domain.Membership;
+import com.example.common.WebAdapter;
+import com.example.membership.application.port.in.FindMembershipCommand;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

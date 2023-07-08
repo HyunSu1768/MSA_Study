@@ -1,11 +1,11 @@
-package org.example.membership.adapter.out.persistence;
+package com.example.membership.adapter.out.persistence;
 
+import com.example.common.PersistenceAdapter;
+import com.example.membership.application.port.out.FindMembershipPort;
+import com.example.membership.application.port.out.ModifyMembershipPort;
+import com.example.membership.application.port.out.RegisterMembershipPort;
+import com.example.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.example.common.PersistenceAdapter;
-import org.example.membership.application.port.out.FindMembershipPort;
-import org.example.membership.application.port.out.ModifyMembershipPort;
-import org.example.membership.application.port.out.RegisterMembershipPort;
-import org.example.membership.domain.Membership;
 
 @RequiredArgsConstructor
 @PersistenceAdapter

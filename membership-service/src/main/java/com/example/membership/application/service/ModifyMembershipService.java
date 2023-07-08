@@ -1,17 +1,14 @@
-package org.example.membership.application.service;
+package com.example.membership.application.service;
 
+import com.example.common.UseCase;
+import com.example.membership.application.port.in.ModifyMembershipCommand;
+import com.example.membership.application.port.out.ModifyMembershipPort;
+import com.example.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import org.example.common.UseCase;
-import org.example.membership.adapter.out.persistence.MembershipJpaEntity;
-import org.example.membership.adapter.out.persistence.MembershipMapper;
-import org.example.membership.adapter.out.persistence.MembershipRepository;
-import org.example.membership.application.port.in.ModifyMembershipCommand;
-import org.example.membership.application.port.in.ModifyMembershipUseCase;
-import org.example.membership.application.port.out.ModifyMembershipPort;
-import org.example.membership.domain.Membership;
+import com.example.membership.adapter.out.persistence.MembershipJpaEntity;
+import com.example.membership.adapter.out.persistence.MembershipMapper;
+import com.example.membership.application.port.in.ModifyMembershipUseCase;
 import org.springframework.transaction.annotation.Transactional;
-
-import javax.persistence.NamedEntityGraph;
 
 @UseCase
 @RequiredArgsConstructor

@@ -1,6 +1,6 @@
-package org.example.membership.adapter.out.persistence;
+package com.example.membership.adapter.out.persistence;
 
-import org.example.membership.domain.Membership;
+import com.example.membership.domain.Membership;
 import org.springframework.stereotype.Component;
 
 @Component

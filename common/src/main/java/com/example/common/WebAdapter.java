@@ -1,4 +1,4 @@
-package org.example.common;
+package com.example.common;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;

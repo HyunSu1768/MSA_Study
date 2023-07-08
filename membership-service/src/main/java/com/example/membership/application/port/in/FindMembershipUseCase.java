@@ -1,7 +1,6 @@
-package org.example.membership.application.port.in;
+package com.example.membership.application.port.in;
 
-import org.example.membership.adapter.out.persistence.MembershipJpaEntity;
-import org.example.membership.domain.Membership;
+import com.example.membership.domain.Membership;
 
 public interface FindMembershipUseCase {
 

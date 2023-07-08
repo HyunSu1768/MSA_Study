@@ -1,9 +1,9 @@
-package org.example.membership.application.port.in;
+package com.example.membership.application.port.in;
 
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.example.common.SelfValidating;
+import com.example.common.SelfValidating;
 
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;

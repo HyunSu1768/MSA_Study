@@ -1,4 +1,4 @@
-package org.example.common;
+package com.example.common;
 
 import javax.validation.*;
 import java.util.Set;

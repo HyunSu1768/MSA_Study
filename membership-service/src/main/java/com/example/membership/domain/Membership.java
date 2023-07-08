@@ -1,8 +1,6 @@
-package org.example.membership.domain;
+package com.example.membership.domain;
 
 import lombok.*;
-
-import javax.persistence.Entity;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Membership {

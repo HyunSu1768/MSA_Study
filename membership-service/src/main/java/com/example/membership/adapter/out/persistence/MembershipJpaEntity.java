@@ -1,4 +1,4 @@
-package org.example.membership.adapter.out.persistence;
+package com.example.membership.adapter.out.persistence;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
