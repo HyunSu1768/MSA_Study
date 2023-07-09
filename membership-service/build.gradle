@@ -21,6 +21,10 @@ dependencies {
     runtimeOnly 'mysql:mysql-connector-java'
 }
 
+springBoot {
+    mainClassName = 'com.example.membership'
+}
+
 docker {
     println(tasks.bootJar.outputs.files)
     name "fast-campus-pay:" + version

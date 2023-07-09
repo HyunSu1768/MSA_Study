@@ -1,3 +1,4 @@
 /*/build/
 axon-server-se/*/*
-db/data/*
+db/**
+.gradle/**
