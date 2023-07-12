@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/db/conf.d" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/#innodb_temp" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/#innodb_redo" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/fastcampus_pay" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/mysql" />
+      <excludeFolder url="file://$MODULE_DIR$/db/initdb.d" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/sys" />
+      <excludeFolder url="file://$MODULE_DIR$/db/data/performance_schema" />
+    </content>
+  </component>
+</module>

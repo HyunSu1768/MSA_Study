@@ -22,7 +22,7 @@ dependencies {
 }
 
 springBoot {
-    mainClassName = 'com.example.membership'
+    mainClassName = 'com.example.membership.MembershipApplication'
 }
 
 docker {
