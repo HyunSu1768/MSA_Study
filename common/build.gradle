@@ -10,6 +10,9 @@ dependencies {
 
 }
 
+targetCompatibility = '11'
+sourceCompatibility = '11'
+
 bootJar{
     enabled = false
 }

@@ -1,10 +1,10 @@
 package com.example.membership.adapter.in.web;
 
 import com.example.common.WebAdapter;
+import com.example.membership.application.port.in.RegisterMembershipCommand;
 import com.example.membership.application.port.in.RegisterMembershipUseCase;
 import com.example.membership.domain.Membership;
 import lombok.RequiredArgsConstructor;
-import com.example.membership.application.port.in.RegisterMembershipCommand;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

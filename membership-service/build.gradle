@@ -5,6 +5,9 @@ ext{
 //    axonVersion = "4.6.0"
 }
 
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
 group = 'com.example.membership'
 version = '0.0.1-SNAPSHOT'
 

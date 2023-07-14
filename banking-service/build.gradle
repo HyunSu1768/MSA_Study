@@ -5,6 +5,9 @@ ext{
 //    axonVersion = "4.6.0"
 }
 
+targetCompatibility = '11'
+sourceCompatibility = '11'
+
 group = 'com.fastcampuspay.banking'
 version = '0.0.1-SNAPSHOT'
 

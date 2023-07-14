@@ -38,3 +38,4 @@ public class RegisterMembershipCommand extends SelfValidating<RegisterMembership
     }
 
 }
+
