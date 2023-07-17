@@ -8,7 +8,7 @@ ext{
 sourceCompatibility = '11'
 targetCompatibility = '11'
 
-group = 'com.example.membership'
+group = 'org.example.membership'
 version = '0.0.1-SNAPSHOT'
 
 dependencies {
@@ -25,7 +25,7 @@ dependencies {
 }
 
 springBoot {
-    mainClassName = 'com.example.membership.MembershipApplication'
+    mainClassName = 'org.example.membership.MembershipApplication'
 }
 
 docker {
