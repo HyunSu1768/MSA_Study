@@ -4,7 +4,7 @@ package com.fastcampuspay.money.application.port.in;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.example.common.SelfValidating;
+import com.fastcampuspay.common.SelfValidating;
 
 import javax.validation.constraints.NotNull;
 

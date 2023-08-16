@@ -8,7 +8,7 @@ import com.fastcampuspay.money.application.port.out.IncreaseMoneyPort;
 import com.fastcampuspay.money.domain.MemberMoney;
 import com.fastcampuspay.money.domain.MoneyChangingRequest;
 import lombok.RequiredArgsConstructor;
-import org.example.common.UseCase;
+import com.fastcampuspay.common.UseCase;
 
 import javax.transaction.Transactional;
 import java.util.UUID;
