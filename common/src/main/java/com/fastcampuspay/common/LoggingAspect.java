@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class LoggingAspect {
-
     private final LoggingProducer loggingProducer;
 
     public LoggingAspect(LoggingProducer loggingProducer) {
@@ -18,6 +17,8 @@ public class LoggingAspect {
     @Before("execution(* com.fastcampuspay.*.adapter.in.web.*.*(..))")
     public void beforeMethodExecution(JoinPoint joinPoint) {
         String methodName = joinPoint.getSignature().getName();
-        loggingProducer.sendMessage("logging", "Before Executing Method: "+ methodName);
+
+        loggingProducer.sendMessage("logging", "Before executing method: " + methodName);
+        // Produce Access log
     }
 }
