@@ -1,5 +1,7 @@
 package com.fastcampuspay.banking.application.service;
 
+import com.fastcampuspay.banking.application.port.out.GetMembershipPort;
+import com.fastcampuspay.banking.application.port.out.MembershipStatus;
 import com.fastcampuspay.common.UseCase;
 import com.fastcampuspay.banking.adapter.out.external.bank.BankAccount;
 import com.fastcampuspay.banking.adapter.out.external.bank.GetBankAccountRequest;
@@ -18,6 +20,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class RegisterBankAccountService implements RegisterBankAccountUseCase {
 
+    private final GetMembershipPort getMembershipPort;
+
     private final RegisterBankAccountPort registerBankAccountPort;
 
     private final RegisteredBankAccountMapper registeredBankAccountMapper;
@@ -26,6 +30,12 @@ public class RegisterBankAccountService implements RegisterBankAccountUseCase {
 
     @Override
     public RegisteredBankAccount registerMembership(RegisterBankAccountCommand command) {
+
+        MembershipStatus membershipStatus = getMembershipPort.getMembership(command.getMembershpId());
+
+        if(!membershipStatus.isValid()){
+            return null;
+        }
 
         BankAccount accountInfo = requestBankAccountInfoPort.getBankAccountInfo(new GetBankAccountRequest(
                 command.getBankName(),
